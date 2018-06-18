@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Windows 3.1 Desktop Pattern Editor</title>
+    <meta name="description" content="Windows 3.1 Desktop Pattern Editor">
+    <meta name="author" content="errantspark">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="edit-pattern-window">
+      <div class="title-bar">
+        <div class="quit"></div>
+        <span>Desktop - Edit Pattern</span>
+      </div>
+      <div class="inner-window">
+        <div class="side-buttons">
+          <button class="w31" type="button" style="margin-bottom: 5px"><span>OK</span></button>
+          <button class="w31" type="button" style="margin-bottom: 9px"><span>Cancel</span></button>
+          <button class="w31" type="button" style="margin-bottom: 23px"><span><u>H</u>elp</span></button>
+          <button class="w31" type="button"><span><u>A</u>dd</span></button>
+          <button class="w31" type="button"><span><u>C</u>hange</span></button>
+          <button class="w31" type="button"><span><u>R</u>emove</span></button>
+        </div>
+        <div class="dropdown-area">
+          <span><u>N</u>ame</span>
+          <select id="presets-selector">
+            <option value="#f87422478f172271"> Thatch</option>
+            <option value="weave"> Weave</option>
+            <option value="quilt"> Quilt</option>
+            <option value="squares"> Squares</option>
+          </select>
+        </div>
+        <canvas id="edit-pattern" width="8px" height="8px"> </canvas>
+        <div class="sample">
+          Sample
+          <div id="sample-pattern"> </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
+
