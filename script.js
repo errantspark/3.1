@@ -76,6 +76,10 @@ window.onload = function() {
   ctx=c.getContext("2d");
   ctx.fillStyle = "#008282";
   ctx.fillRect(0, 0, 8,8);
+  window.onhashchange = () => {
+    p.fromHex(window.location.hash.slice(1,17))
+    updateDocument(p);
+  }
   if (window.location.hash) {
     p.fromHex(window.location.hash.slice(1,17))
   }
